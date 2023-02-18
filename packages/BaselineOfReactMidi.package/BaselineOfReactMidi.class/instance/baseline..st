@@ -3,7 +3,7 @@ baseline: spec
 	<baseline>
 
 	spec for: #common do: [
-		spec baseline: 'GReaSe' with: [spec repository: 'github://hpi-swa-lab/pivr:master/packages'].
+		spec baseline: 'GReaSe' with: [spec repository: 'github://hpi-swa-lab/pivr:master/squeak'].
 		
 		spec
 			package: 'React-Midi' with: [spec requires: #('GReaSe')];
