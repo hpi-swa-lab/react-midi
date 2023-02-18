@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"channelMapping:" : "",
+		"codeChanged:" : "",
+		"component" : "",
+		"component:" : "",
+		"onMidiEvent:" : "",
+		"start" : "",
+		"stop" : "" } }

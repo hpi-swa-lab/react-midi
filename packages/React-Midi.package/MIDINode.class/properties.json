@@ -1,0 +1,16 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"children",
+		"parent",
+		"onMeasureStart" ],
+	"name" : "MIDINode",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

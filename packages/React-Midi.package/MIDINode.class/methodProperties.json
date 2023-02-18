@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addChild:" : "",
+		"addedToPlayer:" : "",
+		"allChildrenDo:" : "",
+		"children" : "",
+		"initialize" : "",
+		"onMeasureStart:" : "",
+		"parent" : "",
+		"parent:" : "",
+		"player" : "",
+		"removeChild:" : "",
+		"removedFromPlayer:" : "",
+		"step" : "",
+		"stepDownBeat:delta:" : "" } }

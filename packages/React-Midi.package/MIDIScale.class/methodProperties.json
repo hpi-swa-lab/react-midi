@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"major:" : "",
+		"minor:" : "",
+		"pentatonic:" : "" },
+	"instance" : {
+		"*" : "",
+		"atRandom" : "",
+		"base" : "",
+		"base:" : "",
+		"steps" : "",
+		"steps:" : "" } }

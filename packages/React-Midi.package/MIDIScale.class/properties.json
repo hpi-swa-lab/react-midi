@@ -1,0 +1,15 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"base",
+		"steps" ],
+	"name" : "MIDIScale",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

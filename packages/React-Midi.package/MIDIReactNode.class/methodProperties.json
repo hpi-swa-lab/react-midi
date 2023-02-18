@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"children" : "",
+		"children:" : "",
+		"computeChildrenAndUpdate:for:caughtError:" : "",
+		"doesNotUnderstand:" : "",
+		"hasKey" : "",
+		"initialize" : "",
+		"isHostComponent" : "",
+		"key" : "",
+		"key:" : "",
+		"printOn:" : "",
+		"properties" : "",
+		"props" : "",
+		"tag" : "",
+		"tag:" : "",
+		"type" : "" } }

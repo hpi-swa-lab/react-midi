@@ -1,0 +1,14 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MIDINoteOff",
+	"pools" : [
+		 ],
+	"super" : "MIDINote",
+	"type" : "normal" }

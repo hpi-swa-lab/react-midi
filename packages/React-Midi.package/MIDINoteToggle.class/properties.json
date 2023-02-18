@@ -1,0 +1,15 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"playing",
+		"duration" ],
+	"name" : "MIDINoteToggle",
+	"pools" : [
+		 ],
+	"super" : "MIDINote",
+	"type" : "normal" }

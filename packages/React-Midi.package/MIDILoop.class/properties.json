@@ -1,0 +1,17 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startTime",
+		"lastCheck",
+		"channel",
+		"completed" ],
+	"name" : "MIDILoop",
+	"pools" : [
+		 ],
+	"super" : "MIDINode",
+	"type" : "normal" }

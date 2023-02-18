@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"moduleName" : "" },
+	"instance" : {
+		"assuredConnection" : "",
+		"chord:velocity:channel:for:" : "",
+		"closePort:" : "",
+		"control:and:channel:" : "",
+		"delete" : "",
+		"get:port:nameInto:lengthPtr:" : "",
+		"getPortName:" : "",
+		"note:velocity:channel:for:" : "",
+		"noteOff:channel:" : "",
+		"noteOff:velocity:channel:" : "",
+		"noteOn:velocity:channel:" : "",
+		"numPorts" : "",
+		"open:port:name:" : "",
+		"open:virtualPortNamed:" : "",
+		"outCreate:name:" : "",
+		"outFree:" : "",
+		"outSend:message:length:" : "",
+		"portCount:" : "",
+		"programChange:channel:" : "",
+		"reset" : "",
+		"send:" : "",
+		"toggleSustainPedal:channel:" : "" } }

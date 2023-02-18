@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addChild:" : "",
+		"beat" : "",
+		"beat:" : "",
+		"beatToMillisecondOffset:" : "",
+		"bpm" : "",
+		"bpm:" : "",
+		"channel:do:" : "",
+		"channelMapping:" : "",
+		"initialize" : "",
+		"measureLengthMilliseconds" : "",
+		"noteOff:velocity:channel:" : "",
+		"noteOn:velocity:channel:" : "",
+		"player" : "",
+		"programChange:channel:" : "",
+		"start" : "",
+		"step" : "",
+		"stop" : "" } }

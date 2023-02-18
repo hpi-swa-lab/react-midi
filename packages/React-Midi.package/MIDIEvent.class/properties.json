@@ -1,0 +1,15 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"atMilliseconds",
+		"atBeat" ],
+	"name" : "MIDIEvent",
+	"pools" : [
+		 ],
+	"super" : "MIDINode",
+	"type" : "normal" }

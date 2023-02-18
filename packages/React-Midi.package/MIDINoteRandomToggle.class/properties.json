@@ -1,0 +1,14 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"choices" ],
+	"name" : "MIDINoteRandomToggle",
+	"pools" : [
+		 ],
+	"super" : "MIDINoteToggle",
+	"type" : "normal" }

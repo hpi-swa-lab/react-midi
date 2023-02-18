@@ -1,0 +1,14 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFHostConfigMidi",
+	"pools" : [
+		 ],
+	"super" : "CMFHostConfig",
+	"type" : "normal" }

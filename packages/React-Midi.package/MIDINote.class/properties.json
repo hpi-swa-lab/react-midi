@@ -1,0 +1,15 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"note",
+		"velocity" ],
+	"name" : "MIDINote",
+	"pools" : [
+		 ],
+	"super" : "MIDIEvent",
+	"type" : "normal" }

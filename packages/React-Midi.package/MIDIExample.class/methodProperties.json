@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"render:" : "",
+		"renderArpeggio:" : "",
+		"renderBass:" : "",
+		"renderDrums:" : "",
+		"renderMelody:" : "",
+		"renderSbahn:" : "" } }

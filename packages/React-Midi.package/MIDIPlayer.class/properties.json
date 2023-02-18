@@ -1,0 +1,19 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"midi",
+		"process",
+		"bpm",
+		"beat",
+		"lastMeasureStart",
+		"channelMapping" ],
+	"name" : "MIDIPlayer",
+	"pools" : [
+		 ],
+	"super" : "MIDINode",
+	"type" : "normal" }

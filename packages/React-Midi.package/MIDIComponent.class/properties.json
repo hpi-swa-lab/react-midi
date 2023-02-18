@@ -1,0 +1,14 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MIDIComponent",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponent",
+	"type" : "normal" }
