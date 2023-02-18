@@ -1,4 +1,5 @@
 OrderedDictionary {
 	'packages/Dworphic-Midi-World.package' : #SquotCypressCodeSerializer,
-	'packages/React-Midi.package' : #SquotCypressCodeSerializer
+	'packages/React-Midi.package' : #SquotCypressCodeSerializer,
+	'packages/BaselineOfReactMidi.package' : #SquotCypressCodeSerializer
 }

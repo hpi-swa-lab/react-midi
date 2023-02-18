@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfReactMidi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfReactMidi",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
