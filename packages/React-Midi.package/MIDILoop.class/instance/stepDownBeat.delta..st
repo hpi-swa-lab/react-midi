@@ -2,5 +2,9 @@ as yet unclassified
 stepDownBeat: aTimeInMilliseconds delta: aDeltaNumber
 
 	completed ifFalse: [^ self].
-	startTime := aTimeInMilliseconds.
-	lastCheck := aDeltaNumber negated
+	
+	completedMeasures := completedMeasures + 1.
+	completedMeasures >= self countOfMeasures ifTrue: [
+		startTime := aTimeInMilliseconds.
+		completedMeasures := 0.
+		lastCheck := aDeltaNumber negated]

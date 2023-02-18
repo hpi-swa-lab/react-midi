@@ -9,7 +9,8 @@
 		"startTime",
 		"lastCheck",
 		"channel",
-		"completed" ],
+		"completed",
+		"completedMeasures" ],
 	"name" : "MIDILoop",
 	"pools" : [
 		 ],

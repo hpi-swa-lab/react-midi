@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 	
-	completed := true
+	completed := true.
+	completedMeasures := 0
