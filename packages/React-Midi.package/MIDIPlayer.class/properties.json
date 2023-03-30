@@ -13,7 +13,8 @@
 		"lastMeasureStart",
 		"channelMapping",
 		"scheduled",
-		"progress" ],
+		"progress",
+		"startTime" ],
 	"name" : "MIDIPlayer",
 	"pools" : [
 		 ],

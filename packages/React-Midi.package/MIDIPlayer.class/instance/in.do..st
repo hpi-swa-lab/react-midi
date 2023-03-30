@@ -1,4 +1,4 @@
 as yet unclassified
 in: aNumber do: aBlock
 
-	scheduled add: progress + aNumber -> aBlock
+	scheduled add: self progress + aNumber -> aBlock

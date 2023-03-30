@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"atBeat" ],
-	"name" : "MIDIEvent",
+		"note",
+		"channel" ],
+	"name" : "MIDIScheduledNoteOff",
 	"pools" : [
 		 ],
-	"super" : "MIDINode",
+	"super" : "Object",
 	"type" : "normal" }

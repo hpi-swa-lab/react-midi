@@ -2,7 +2,8 @@
 	"class" : {
 		"major:" : "",
 		"minor:" : "",
-		"pentatonic:" : "" },
+		"pentatonic:" : "",
+		"pentatonicWithRest:" : "tobe 3/30/2023 12:56" },
 	"instance" : {
 		"*" : "",
 		"atRandom" : "",
