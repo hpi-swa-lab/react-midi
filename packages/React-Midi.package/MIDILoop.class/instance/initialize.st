@@ -3,5 +3,4 @@ initialize
 
 	super initialize.
 	
-	completed := true.
-	completedMeasures := 0
+	lastCheck := 0.0

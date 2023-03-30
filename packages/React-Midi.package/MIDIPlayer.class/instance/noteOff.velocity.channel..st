@@ -3,4 +3,4 @@ noteOff: aNoteNumber velocity: aVelocityNumber channel: aChannelNumber
 
 	self
 		channel: aChannelNumber
-		do: [:channel | midi noteOff: aNoteNumber velocity: aVelocityNumber channel: channel]
+		do: [:channel | midi ifNotNil: [:m | m noteOff: aNoteNumber velocity: aVelocityNumber channel: channel]]

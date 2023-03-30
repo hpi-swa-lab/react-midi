@@ -11,7 +11,9 @@
 		"bpm",
 		"beat",
 		"lastMeasureStart",
-		"channelMapping" ],
+		"channelMapping",
+		"scheduled",
+		"progress" ],
 	"name" : "MIDIPlayer",
 	"pools" : [
 		 ],

@@ -12,13 +12,10 @@ loop: aCollection channel: aNumber
 				ifTrue: [
 					{
 						MIDIReactNode new
-							tag: MIDINoteOn;
+							tag: MIDINoteToggle;
 							note: note note;
-							atBeat: time - note duration.
-						MIDIReactNode new
-							tag: MIDINoteOff;
-							note: note note;
-							atBeat: time}]
+							duration: note duration;
+							atBeat: time - note duration}]
 				ifFalse: [
 					{
 						MIDIReactNode new

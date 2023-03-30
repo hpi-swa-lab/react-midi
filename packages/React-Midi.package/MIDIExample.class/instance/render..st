@@ -1,4 +1,4 @@
-as yet unclassified
+midi components
 render: props
 
 	| player |
@@ -6,7 +6,7 @@ render: props
 	
 	self
 		useEffect: [
-			player bpm: 120.
+			player bpm: 110.
 			player programChange: 8 channel: 1.
 			player programChange: 33 channel: 3]
 		dependencies: {}.

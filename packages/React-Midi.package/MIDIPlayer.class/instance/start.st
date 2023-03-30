@@ -6,6 +6,7 @@ start
 	midi := RtMIDI new.
 	lastMeasureStart := Time millisecondClock.
 	process := [
-		[
-			self allChildrenDo: [:c | c step].
+		[ | progress |
+			progress := self step.
+			self allChildrenDo: [:c | c step: progress].
 			10 milliSeconds wait] repeat] forkAt: Processor userBackgroundPriority
