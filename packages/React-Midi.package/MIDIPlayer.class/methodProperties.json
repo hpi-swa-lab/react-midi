@@ -8,7 +8,7 @@
 		"beatToMillisecondDuration:" : "tobe 3/30/2023 12:18",
 		"beatToMillisecondOffset:" : "",
 		"bpm" : "",
-		"bpm:" : "tobe 3/30/2023 12:46",
+		"bpm:" : "tobe 4/1/2023 08:15",
 		"channel:do:" : "",
 		"channelMapping:" : "",
 		"in:do:" : "tobe 3/30/2023 13:16",
@@ -20,6 +20,8 @@
 		"player" : "",
 		"programChange:channel:" : "",
 		"progress" : "tobe 3/30/2023 13:26",
+		"reset" : "tobe 4/1/2023 08:15",
+		"runAllScheduled" : "tobe 4/1/2023 08:13",
 		"start" : "tobe 3/30/2023 13:27",
 		"step" : "tobe 3/30/2023 13:39",
-		"stop" : "tobe 3/30/2023 12:28" } }
+		"stop" : "tobe 4/1/2023 08:13" } }
