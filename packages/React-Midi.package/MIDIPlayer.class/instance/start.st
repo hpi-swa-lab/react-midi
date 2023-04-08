@@ -3,7 +3,7 @@ start
 
 	self stop.
 	
-	midi := RtMIDI new.
+	midi := self class midiClass new.
 	startTime := Time utcMicrosecondClock.
 	lastMeasureStart := 0.0.
 	process := [[self step] repeat] forkAt: Processor userSchedulingPriority
