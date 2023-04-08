@@ -1,12 +1,14 @@
 {
 	"class" : {
-		 },
+		"current" : "tobe 4/8/2023 15:50",
+		"remoteHost" : "tobe 4/8/2023 15:58",
+		"useRemote:" : "tobe 4/8/2023 15:58" },
 	"instance" : {
-		"channelMapping:" : "",
-		"codeChanged:" : "",
+		"channelMapping:" : "tobe 4/8/2023 16:07",
+		"codeChanged:" : "tobe 4/8/2023 16:07",
 		"component" : "",
 		"component:" : "",
 		"onMidiEvent:" : "",
 		"player" : "tobe 4/8/2023 10:06",
-		"start" : "tobe 3/30/2023 12:30",
+		"start" : "lege 4/8/2023 15:00",
 		"stop" : "" } }

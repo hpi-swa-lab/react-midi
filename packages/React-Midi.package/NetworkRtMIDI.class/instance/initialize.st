@@ -4,4 +4,4 @@ initialize
 	super initialize.
 	
 	socket := Socket newTCP.
-	socket connectTo: (NetNameResolver addressFromString: '127.0.0.1') port: 11763
+	socket connectTo: (NetNameResolver addressFromString: '192.168.1.42') port: 11763
