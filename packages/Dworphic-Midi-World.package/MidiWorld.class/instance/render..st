@@ -1,7 +1,7 @@
 as yet unclassified
 render: props
 
-	| midiReact channelMapping instruments channelAreas |
+	| midiReact channelMapping instruments channelAreas channelLabels |
 	channelAreas := self useRef: Dictionary new.
 	channelMapping := self useState: Dictionary new.
 	midiReact := self useState: [MIDIExample start channelMapping: channelMapping get].
@@ -21,6 +21,14 @@ render: props
 						at: name put: (Matrix4x4 withOffset: 0 @ 1 @ 0);
 						yourself]]]].
 	
+	channelLabels := {
+		'drums'.
+		'bass'.
+		'arp'.
+		'pad'.
+		'lead'.
+	}.
+	
 	^ ApplicationDworph new children: {
 		GRProvider values: {#channelAreas -> channelAreas get} children: {
 			GDStaticBody new
@@ -30,6 +38,8 @@ render: props
 					pointXY := Point r: 1.2 m degrees: angle.
 					MidiChannelArea new
 						translation: pointXY x @ 0 @ pointXY y;
+						rotation: 0 @ (Float pi * 1.5 - angle degreesToRadians) @ 0;
+						label: (channelLabels at: channel);
 						channel: channel]), (instruments get associations collect: [:instrument |
 					MidiMethod new
 						instrument: instrument key;

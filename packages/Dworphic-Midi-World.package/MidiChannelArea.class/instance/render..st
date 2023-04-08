@@ -1,7 +1,7 @@
 as yet unclassified
 render: props
 
-	props extract: [:translation :channel | | channelAreas ref radius |
+	props extract: [:translation :rotation :channel :label | | channelAreas ref radius |
 		ref := self useGodotRef.
 		channelAreas := self useProvided: #channelAreas.
 		self
@@ -12,6 +12,7 @@ render: props
 		
 		^ GDMeshInstance new
 			translation: translation + (0 @ (self class height / 2) @ 0);
+			rotation: rotation;
 			mesh: (GDCylinderMesh new
 				height: self class height;
 				topRadius: radius;
@@ -31,4 +32,6 @@ render: props
 					children: {
 						GDCollisionShape new shape: (GDCylinderShape new
 							height: self class height;
-							radius: radius)}}]
+							radius: radius)}.
+				GDLabel3D new
+					text: label}]

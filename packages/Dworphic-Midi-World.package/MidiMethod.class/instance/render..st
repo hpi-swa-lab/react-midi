@@ -9,7 +9,7 @@ render: props
 		morph := self useStyledTextMorph: text.
 		
 		^ GRGrabbableArea new
-			point: true;
+			point: false;
 			touch: true;
 			children: {
 				self renderCollisionShape: morph.
