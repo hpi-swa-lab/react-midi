@@ -1,9 +1,11 @@
 {
 	"class" : {
-		 },
+		"current" : "tobe 4/8/2023 15:50",
+		"remoteHost" : "tobe 4/8/2023 15:58",
+		"useRemote:" : "tobe 4/8/2023 15:58" },
 	"instance" : {
-		"channelMapping:" : "",
-		"codeChanged:" : "",
+		"channelMapping:" : "tobe 4/8/2023 16:07",
+		"codeChanged:" : "tobe 4/8/2023 16:07",
 		"component" : "",
 		"component:" : "",
 		"onMidiEvent:" : "",
