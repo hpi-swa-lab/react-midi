@@ -1,0 +1,14 @@
+{
+	"category" : "Dworphic-Midi-World",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MidiMethod",
+	"pools" : [
+		 ],
+	"super" : "GRComponent",
+	"type" : "normal" }

@@ -2,7 +2,6 @@ as yet unclassified
 render: props
 
 	^ props extract: [:onAssignChannel :onTransform :instrument :globalTransform | | grabbed channelAreas |
-		grabbed := self useState: false.
 		channelAreas := self useProvided: #channelAreas.
 		
 		GDRigidBody new
@@ -10,6 +9,7 @@ render: props
 			mode: GDRigidBody modeStatic;
 			children: {
 				GDCollisionShape new shape: (GDBoxShape new extents: 5 cm asVector3).
+				MidiMethod new method: instrument.
 				GRGrabbableArea new
 					point: true;
 					touch: true;
@@ -18,12 +18,4 @@ render: props
 					onRelease: [:event |
 						grabbed set: false.
 						onTransform value: event transform];
-					children: {
-						self cubeOfSize: 10 cm color: (Color r: 0.0 g: 0.0 b: 1).
-						GDArea new
-							onAreaEntered: [:area |
-								channelAreas associations
-									detect: [:assoc | assoc key get = area]
-									ifFound: [:assoc | onAssignChannel value: assoc value]];
-							onAreaExited: [:area | onAssignChannel value: nil];
-							children: {GDCollisionShape new shape: (GDBoxShape new extents: 5 cm asVector3)}}}]
+					children: {self cubeOfSize: 10 cm color: (Color r: 0.0 g: 0.0 b: 1)}}]

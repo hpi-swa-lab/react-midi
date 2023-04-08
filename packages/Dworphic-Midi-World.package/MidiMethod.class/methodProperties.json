@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"collisionShape" : "",
+		"getTextMorphExtent:" : "",
+		"getTextMorphShape:" : "",
+		"render:" : "tobe 4/8/2023 10:13",
+		"renderCollisionShape:" : "",
+		"useStyledTextMorph:" : "" } }

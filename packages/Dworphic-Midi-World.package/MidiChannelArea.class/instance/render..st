@@ -1,17 +1,21 @@
 as yet unclassified
 render: props
 
-	props extract: [:translation :channel | | channelAreas ref |
+	props extract: [:translation :channel | | channelAreas ref radius |
 		ref := self useGodotRef.
 		channelAreas := self useProvided: #channelAreas.
-		self useEffect: [channelAreas at: ref put: channel] dependencies: #().
+		self
+			useEffect: [channelAreas at: ref put: (channel = 5 ifTrue: [9] ifFalse: [channel])]
+			dependencies: #().
+		
+		radius := 0.5 m.
 		
 		^ GDMeshInstance new
-			translation: translation + (0 @ 1m @ 0);
+			translation: translation + (0 @ (self class height / 2) @ 0);
 			mesh: (GDCylinderMesh new
-				height: 2m;
-				topRadius: 1m;
-				bottomRadius: 1m;
+				height: self class height;
+				topRadius: radius;
+				bottomRadius: radius;
 				material: (GDSpatialMaterial new
 					flagsTransparent: true;
 					paramsCullMode: GDSpatialMaterial cullDisabled;
@@ -25,7 +29,6 @@ render: props
 					linearDamp: 0.9;
 					angularDamp: 0.9;
 					children: {
-						GDCollisionShape new
-							shape: (GDCylinderShape new
-								height: 2m;
-								radius: 1m)}}]
+						GDCollisionShape new shape: (GDCylinderShape new
+							height: self class height;
+							radius: radius)}}]
