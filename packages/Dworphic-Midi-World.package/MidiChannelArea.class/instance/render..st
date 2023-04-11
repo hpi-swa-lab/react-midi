@@ -4,9 +4,7 @@ render: props
 	props extract: [:translation :rotation :channel :label | | channelAreas ref radius |
 		ref := self useGodotRef.
 		channelAreas := self useProvided: #channelAreas.
-		self
-			useEffect: [channelAreas at: ref put: (channel = 5 ifTrue: [9] ifFalse: [channel])]
-			dependencies: #().
+		self useEffect: [channelAreas at: ref put: channel - 1] dependencies: #().
 		
 		radius := 0.5 m.
 		
@@ -33,5 +31,4 @@ render: props
 						GDCollisionShape new shape: (GDCylinderShape new
 							height: self class height;
 							radius: radius)}.
-				GDLabel3D new
-					text: label}]
+				GDLabel3D new text: label}]

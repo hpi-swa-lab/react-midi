@@ -1,2 +1,4 @@
 as yet unclassified
-moduleName ^ 'rtmidi'
+moduleName
+
+	^ '/usr/lib/x86_64-linux-gnu/librtmidi.so.6'

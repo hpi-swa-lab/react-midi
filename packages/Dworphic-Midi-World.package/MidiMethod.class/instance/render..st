@@ -5,10 +5,12 @@ render: props
 		channelAreas := self useProvided: #channelAreas.
 		grabbed := self useState: false.
 		
-		text := self useMemo: [(MIDIExample >> instrument) getSource] dependencies: {instrument}.
+		text := self
+			useMemo: [(MIDIReact current midiClass >> instrument) getSource]
+			dependencies: {instrument}.
 		morph := self useStyledTextMorph: text.
 		
-		^ GRGrabbableArea new
+		GRDraggableArea new
 			point: false;
 			touch: true;
 			children: {
@@ -18,7 +20,6 @@ render: props
 					children: {
 						FormDworph new
 							morph: morph;
-							rotationDegrees: 0 @ 0 @ 0;
 							translation: 0 @ 0.017 @ 0.
 						GDMeshInstance new
 							mesh: (GDCubeMesh new
@@ -33,7 +34,7 @@ render: props
 									ifFound: [:assoc | onAssignChannel value: assoc value]];
 							onAreaExited: [:area | onAssignChannel value: nil];
 							children: {GDCollisionShape new shape: (GDBoxShape new extents: 5 cm asVector3)}};
-					rotation: 90 @ 0 @ 0};
+					rotationDegrees: 90 @ 0 @ 0};
 			transform: transform;
 			handle: instrument;
 			onGrab: [:e | grabbed set: true];

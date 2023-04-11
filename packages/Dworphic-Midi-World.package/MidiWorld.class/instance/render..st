@@ -4,7 +4,7 @@ render: props
 	| midiReact channelMapping instruments channelAreas channelLabels |
 	channelAreas := self useRef: Dictionary new.
 	channelMapping := self useState: Dictionary new.
-	midiReact := self useState: [MIDIExample start channelMapping: channelMapping get].
+	midiReact := self useState: [MIDIReact syncClass start channelMapping: channelMapping get].
 	instruments := self useState: Dictionary new.
 	
 	self useSingletonEffect: [[midiReact get stop]] dependencies: #().
@@ -21,13 +21,7 @@ render: props
 						at: name put: (Matrix4x4 withOffset: 0 @ 1 @ 0);
 						yourself]]]].
 	
-	channelLabels := {
-		'drums'.
-		'bass'.
-		'arp'.
-		'pad'.
-		'lead'.
-	}.
+	channelLabels := {'drums'. 'pad'. 'arp'. 'lead'. 'bass'}.
 	
 	^ ApplicationDworph new children: {
 		GRProvider values: {#channelAreas -> channelAreas get} children: {
@@ -45,9 +39,8 @@ render: props
 						instrument: instrument key;
 						transform: instrument value;
 						onAssignChannel: [:channel | channelMapping set: [:old | old copyAt: instrument key put: channel]];
-						onMove: [:transform |
-							midiReact get player
-								volume: transform offset y / MidiChannelArea height
-								channel: instrument key];
+						onMove: [:transform | | volume |
+							volume := transform offset y / MidiChannelArea height.
+							self updateVolume: volume react: midiReact get for: instrument key];
 						onTransform: [:transform | instruments set: [:i | i copyAt: instrument key put: transform]];
 						key: instrument key asSymbol])}}
