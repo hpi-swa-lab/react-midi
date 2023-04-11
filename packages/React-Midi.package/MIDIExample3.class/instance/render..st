@@ -6,7 +6,7 @@ render: props
 	
 	self
 		useEffect: [
-			player bpm: 60.
+			player bpm: 80.
 			player programChange: 8 channel: 1.
 			player programChange: 33 channel: 3]
 		dependencies: {}.

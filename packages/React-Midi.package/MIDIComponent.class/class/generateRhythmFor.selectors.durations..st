@@ -1,7 +1,7 @@
 as yet unclassified
 generateRhythmFor: aNumber selectors: aCollection durations: anotherCollection
 
-	| total notes |
+	| total notes code |
 	"Generate a sequence of notes based on your choices and copies to clipboard.
 
 pass a number of measures to fill (e.g. 2 for 2 measures), a number of symbols that are either
@@ -28,7 +28,7 @@ MIDIComponent generateRhythmFor: 2 selectors: {MIDIScale pentatonic: MIDICompone
 					ifFalse: [stream nextPutAll: (MIDIComponent organization listAtCategoryNamed: note)]]]].
 	
 	total := 0.
-	^ Clipboard clipboardText: ('\{{1}\}' format: {
+	code := '\{{1}\}' format: {
 		String streamContents: [:stream |
 			[total < aNumber] whileTrue: [ | length note |
 				note := notes atRandom.
@@ -38,4 +38,5 @@ MIDIComponent generateRhythmFor: 2 selectors: {MIDIScale pentatonic: MIDICompone
 				stream nextPutAll: (note isNumber ifTrue: ['self note: {1} for: {2}. ' format: {note. length}] ifFalse: [
 					note isUnary
 						ifTrue: ['self note: self {1} for: {2}. ' format: {note. length}]
-						ifFalse: ['self {1} {2}. ' format: {note. length}]])]]})
+						ifFalse: ['self {1} {2}. ' format: {note. length}]])]]}.
+	^ Clipboard clipboardText: (PPFormatter formatString: code class: UndefinedObject noPattern: true)
