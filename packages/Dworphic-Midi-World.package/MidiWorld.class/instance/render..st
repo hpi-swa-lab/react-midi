@@ -21,7 +21,7 @@ render: props
 						at: name put: (Matrix4x4 withOffset: 0 @ 1 @ 0);
 						yourself]]]].
 	
-	channelLabels := {'drums'. 'pad'. 'arp'. 'lead'. 'bass'}.
+	channelLabels := {'drums'. 'pad'. 'bass'. 'arp'. 'lead'}.
 	
 	^ ApplicationDworph new children: {
 		GRProvider values: {#channelAreas -> channelAreas get} children: {
