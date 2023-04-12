@@ -3,7 +3,7 @@ renderArp: props
 
 	self useEffect: [
 		"Feedback"
-		(props at: #player) control: 2 with: 0 channel: (props at: #channel).
+		"(props at: #player) control: 2 with: 0 channel: (props at: #channel)."
 	].
 	
 	^ {

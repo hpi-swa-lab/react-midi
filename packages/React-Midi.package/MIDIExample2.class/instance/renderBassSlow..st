@@ -1,8 +1,8 @@
 as yet unclassified
-renderBass1: props
+renderBassSlow: props
 	| tl1 tl2 scale |
 	
-	scale := MIDIScale pentatonic: self a2.
+	scale := MIDIScale pentatonic: self d3.
 	tl1 := [:base :top | { 
 		self note: base for: 1 / 8.
 		self note: top for: 1 / 8.
@@ -18,12 +18,12 @@ renderBass1: props
 	}].
 	
 	^ self loop: (
-		(tl1 value: self a1 value: self a2),
-		(tl2 value: self a1 value: self a2),
-		(tl1 value: self gs1 value: self a2),
-		(tl2 value: self gs1 value: self a2),
-		(tl1 value: self g1 value: self g2),
-		(tl2 value: self g1 value: self g2),
-		(tl1 value: self f1 value: self f2),
-		(tl2 value: self f1 value: self f2)
+		(tl1 value: self d2 value: self d3),
+		(tl2 value: self d2 value: self d3),
+		(tl1 value: self f2 value: self f3),
+		(tl2 value: self f2 value: self f3),
+		(tl1 value: self a1 value: self a3),
+		(tl2 value: self a1 value: self a3),
+		(tl1 value: self e2 value: self e3),
+		(tl2 value: self e2 value: self e3)
 	) channel: (props at: #channel)
