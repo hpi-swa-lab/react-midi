@@ -1,0 +1,14 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NullRtMIDI",
+	"pools" : [
+		 ],
+	"super" : "RtMIDI",
+	"type" : "normal" }

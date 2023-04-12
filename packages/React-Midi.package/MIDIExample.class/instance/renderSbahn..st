@@ -1,4 +1,4 @@
-as yet unclassified
+midi components
 renderSbahn: props
 
 	^ self

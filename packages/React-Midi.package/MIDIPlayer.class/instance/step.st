@@ -1,11 +1,19 @@
 as yet unclassified
 step
 
-	| measureLength now delta |
-	measureLength := self measureLengthMilliseconds.
-	now := Time millisecondClock.
+	| currentMeasureStart |
+	progress := self progress.
 	
-	delta := now - (lastMeasureStart + measureLength).
-	delta >= 0 ifTrue: [
-		lastMeasureStart := now - delta.
-		self allChildrenDo: [:c | c stepDownBeat: lastMeasureStart delta: delta]]
+	currentMeasureStart := progress floor.
+	currentMeasureStart > lastMeasureStart ifTrue: [
+		lastMeasureStart := currentMeasureStart.
+		self allChildrenDo: [:c | c stepDownBeat]].
+	
+	scheduled copy do: [:pair |
+		progress > pair key ifTrue: [
+			scheduled remove: pair.
+			pair value value: self]].
+	
+	self allChildrenDo: [:c | c step: progress].
+	
+	10 milliSeconds wait

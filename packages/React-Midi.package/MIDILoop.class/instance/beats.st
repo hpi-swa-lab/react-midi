@@ -1,4 +1,4 @@
 as yet unclassified
-countOfMeasures
+beats
 
 	^ (self children collect: [:c | c endBeat]) max ceiling

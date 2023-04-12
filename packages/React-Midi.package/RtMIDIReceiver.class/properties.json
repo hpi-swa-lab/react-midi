@@ -1,0 +1,18 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"socket",
+		"listenerProcess",
+		"clientSocket",
+		"stream",
+		"midi" ],
+	"name" : "RtMIDIReceiver",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

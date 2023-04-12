@@ -2,6 +2,6 @@ as yet unclassified
 note: aNote for: aNumber
 
 	^ MIDIReactNode new
-		tag: MIDINote;
+		tag: MIDINoteToggle;
 		note: aNote;
 		duration: aNumber

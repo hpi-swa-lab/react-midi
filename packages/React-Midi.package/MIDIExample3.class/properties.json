@@ -1,0 +1,14 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MIDIExample3",
+	"pools" : [
+		 ],
+	"super" : "MIDIComponent",
+	"type" : "normal" }

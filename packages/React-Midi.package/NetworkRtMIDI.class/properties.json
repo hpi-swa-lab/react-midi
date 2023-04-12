@@ -1,0 +1,14 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"socket" ],
+	"name" : "NetworkRtMIDI",
+	"pools" : [
+		 ],
+	"super" : "NullRtMIDI",
+	"type" : "normal" }

@@ -1,11 +1,19 @@
 {
 	"class" : {
-		 },
+		"current" : "tobe 4/8/2023 15:50",
+		"remoteHost" : "tobe 4/8/2023 15:58",
+		"startInteractionsClient:" : "tobe 4/11/2023 17:20",
+		"startPlaybackHost:" : "tobe 4/11/2023 10:20",
+		"syncClass" : "tobe 4/11/2023 10:15",
+		"useRemote:" : "tobe 4/8/2023 15:58" },
 	"instance" : {
-		"channelMapping:" : "",
-		"codeChanged:" : "",
+		"channelMapping:" : "tobe 4/11/2023 09:49",
+		"codeChanged:" : "tobe 4/11/2023 10:06",
 		"component" : "",
-		"component:" : "",
+		"component:" : "tobe 4/8/2023 16:45",
+		"midiClass" : "tobe 4/11/2023 10:04",
 		"onMidiEvent:" : "",
-		"start" : "",
+		"player" : "tobe 4/8/2023 10:06",
+		"sendSync:data:" : "tobe 4/11/2023 10:13",
+		"start" : "lege 4/8/2023 15:00",
 		"stop" : "" } }

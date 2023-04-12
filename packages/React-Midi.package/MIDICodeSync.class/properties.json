@@ -1,0 +1,17 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Instance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"socket",
+		"listenerProcess",
+		"clientSocket",
+		"server" ],
+	"name" : "MIDICodeSync",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

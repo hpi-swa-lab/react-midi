@@ -3,8 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"CurrentClass",
+		"RemoteHost",
+		"Running" ],
+	"commentStamp" : "tobe 3/30/2023 12:53",
 	"instvars" : [
 		"player",
 		"react",

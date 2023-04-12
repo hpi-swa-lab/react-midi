@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"atMilliseconds",
 		"atBeat" ],
 	"name" : "MIDIEvent",
 	"pools" : [

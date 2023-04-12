@@ -3,9 +3,7 @@ start
 
 	self stop.
 	
-	midi := RtMIDI new.
-	lastMeasureStart := Time millisecondClock.
-	process := [
-		[
-			self allChildrenDo: [:c | c step].
-			10 milliSeconds wait] repeat] forkAt: Processor userBackgroundPriority
+	midi := self class midiClass new.
+	startTime := Time utcMicrosecondClock.
+	lastMeasureStart := 0.0.
+	process := [[self step] repeat] forkAt: Processor userSchedulingPriority

@@ -1,0 +1,15 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"note",
+		"channel" ],
+	"name" : "MIDIScheduledNoteOff",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

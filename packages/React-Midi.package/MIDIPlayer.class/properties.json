@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"MidiClass" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"midi",
@@ -11,7 +11,10 @@
 		"bpm",
 		"beat",
 		"lastMeasureStart",
-		"channelMapping" ],
+		"channelMapping",
+		"scheduled",
+		"progress",
+		"startTime" ],
 	"name" : "MIDIPlayer",
 	"pools" : [
 		 ],
