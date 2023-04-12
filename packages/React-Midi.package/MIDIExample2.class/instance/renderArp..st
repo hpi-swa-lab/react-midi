@@ -1,12 +1,13 @@
 as yet unclassified
 renderArp: props
-
-	self useEffect: [
-		"Feedback"
-		(props at: #player) control: 2 with: 0 channel: (props at: #channel).
-	].
+	| scale |
 	
-	^ {
-		self loop: 4 of: (MIDIScale pentatonicWithRest: self d2) for: 1 / 8 channel: (props at: #channel).
-		"self loop: 4 of: (MIDIScale pentatonic: self a2) for: 1 / 16 channel: (props at: #channel)."
-		}
+	scale := MIDIScale pentatonic: self d3.
+
+	^ self loop: {
+		self restFor: 2 / 4.
+		self random: scale for: 1 / 8.
+		self random: scale for: 1 / 8.
+		self random: scale for: 1 / 8.
+		self random: scale for: 1 / 8.
+	} channel: (props at: #channel)
