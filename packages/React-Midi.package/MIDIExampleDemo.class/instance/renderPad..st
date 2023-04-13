@@ -3,8 +3,7 @@ renderPad: props
 	
 
 	self useEffect: [
-		"(props at: #player) control: 2 with: 30 channel: (props at: #channel)."  "filter: default 40"
-		(props at: #player) control: 3 with: 0 channel: (props at: #channel).  "phaser: default 0"
+		(props at: #player) control: 3 with: 20 channel: (props at: #channel).  "phaser: default 0"
 	].
 
 	^ self loop: ({
