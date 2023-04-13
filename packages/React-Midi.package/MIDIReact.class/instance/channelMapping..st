@@ -3,4 +3,6 @@ channelMapping: aDictionary
 
 	channelMapping := aDictionary.
 	
-	self sendSync: 'channel' data: aDictionary
+	self sendSync: 'channel' data: aDictionary.
+	
+	player broadcastOnAssign
