@@ -8,12 +8,11 @@ loop: aCollection channel: aNumber
 		channel: aNumber;
 		children: (aCollection gather: [:note |
 			time := time + note duration.
-			((note respondsTo: #note) not or: [note note > 0])
+			note isNotRest
 				ifTrue: [
 					{
 						note
-							atBeat: time - note duration;
-							yourself}]
+							atBeat: time - note duration}]
 				ifFalse: [
 					{
 						MIDIReactNode new

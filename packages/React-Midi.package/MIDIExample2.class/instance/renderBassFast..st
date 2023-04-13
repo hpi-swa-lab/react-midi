@@ -5,9 +5,9 @@ renderBassFast: props
 	scale := MIDIScale pentatonic: self d2.
 	tl1 := [:base | { 
 		self note: base for: 1 / 16.
-		self note: scale atRandom for: 1 / 16.
-		self note: scale atRandom for: 1 / 16.
-		self note: scale atRandom for: 1 / 16.
+		self random: scale for: 1 / 16.
+		self random: scale for: 1 / 16.
+		self random: scale for: 1 / 16.
 	}].
 	
 	^ self loop: (

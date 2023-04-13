@@ -1,14 +1,13 @@
 as yet unclassified
-renderLead: props
+renderArpDouble: props
 	| scale |
 	
-	scale := MIDIScale pentatonic: self d2.
+	scale := MIDIScale pentatonic: self d4.
 
 	^ self loop: {
+		self restFor: 2 / 4.
 		self random: scale for: 1 / 8.
 		self random: scale for: 1 / 8.
 		self random: scale for: 1 / 8.
 		self random: scale for: 1 / 8.
-		self restFor: 3 / 8.
-		self random: (scale orRest: 10) for: 1 / 8.
 	} channel: (props at: #channel)
