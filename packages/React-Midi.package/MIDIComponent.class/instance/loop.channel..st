@@ -8,14 +8,12 @@ loop: aCollection channel: aNumber
 		channel: aNumber;
 		children: (aCollection gather: [:note |
 			time := time + note duration.
-			note note > 0
+			((note respondsTo: #note) not or: [note note > 0])
 				ifTrue: [
 					{
-						MIDIReactNode new
-							tag: MIDINoteToggle;
-							note: note note;
-							duration: note duration;
-							atBeat: time - note duration}]
+						note
+							atBeat: time - note duration;
+							yourself}]
 				ifFalse: [
 					{
 						MIDIReactNode new

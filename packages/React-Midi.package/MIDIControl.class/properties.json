@@ -1,0 +1,16 @@
+{
+	"category" : "React-Midi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"duration",
+		"parameter",
+		"value" ],
+	"name" : "MIDIControl",
+	"pools" : [
+		 ],
+	"super" : "MIDINote",
+	"type" : "normal" }
