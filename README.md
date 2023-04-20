@@ -13,6 +13,8 @@ We have tested this on Linux and Windows only.
 3. The remainder of the workspace explains the use of the system.
 4. (Windows-only) we needed LoopMIDI to be able to send the generated MIDI events to a locally running synth. https://www.tobias-erichsen.de/software/loopmidi.html
 
+Please open an issue if you're having any troubles :)
+
 ## Installation from Scratch
 
 * You need a Squeak6.0.
